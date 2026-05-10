@@ -54,7 +54,7 @@ const defMingguan = () => [
 // ─────────────────────────────────────────────────────────────────────────────
 function useLS(key,defFn){
   const [v,setV]=useState(()=>{
-    try{const r=localStorage.getItem(key);if(r){const p=JSON.parse(r);if(Array.isArray(p)&&p.length>0)return p;}}catch(_){}
+    try{const r=localStorage.getItem(key);if(r!=null){const p=JSON.parse(r);if(Array.isArray(p))return p;}}catch(_){}
     return typeof defFn==="function"?defFn():defFn;
   });
   useEffect(()=>{try{localStorage.setItem(key,JSON.stringify(v));}catch(_){};},[key,v]);
