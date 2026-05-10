@@ -1,7 +1,7 @@
 {
   "name": "TrainPlan - Workout Planner",
   "short_name": "TrainPlan",
-  "description": "Workout schedule planner dengan notifikasi, timer, dan checkpoint",
+  "description": "Workout schedule planner dengan timer, checkpoint, dan notifikasi",
   "theme_color": "#FF6230",
   "background_color": "#04050E",
   "display": "standalone",
@@ -10,23 +10,12 @@
   "start_url": "/",
   "categories": ["health", "fitness"],
   "icons": [
-    {
-      "src": "/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
+    { "src": "/favicon.svg",   "sizes": "any",     "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icon-192.png",  "sizes": "192x192", "type": "image/png",     "purpose": "any maskable" },
+    { "src": "/icon-512.png",  "sizes": "512x512", "type": "image/png",     "purpose": "any maskable" }
   ],
   "shortcuts": [
-    {
-      "name": "Jadwal Hari Ini",
-      "url": "/",
-      "description": "Lihat jadwal latihan hari ini"
-    },
-    {
-      "name": "Checkpoint",
-      "url": "/",
-      "description": "Lihat checkpoint hari ini"
-    }
+    { "name": "Hari Ini",  "url": "/", "description": "Lihat jadwal hari ini" },
+    { "name": "Harian",    "url": "/", "description": "Jadwal harian" }
   ]
 }
