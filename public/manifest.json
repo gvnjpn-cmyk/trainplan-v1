@@ -1,0 +1,32 @@
+{
+  "name": "TrainPlan - Workout Planner",
+  "short_name": "TrainPlan",
+  "description": "Workout schedule planner dengan notifikasi, timer, dan checkpoint",
+  "theme_color": "#FF6230",
+  "background_color": "#04050E",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "start_url": "/",
+  "categories": ["health", "fitness"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Jadwal Hari Ini",
+      "url": "/",
+      "description": "Lihat jadwal latihan hari ini"
+    },
+    {
+      "name": "Checkpoint",
+      "url": "/",
+      "description": "Lihat checkpoint hari ini"
+    }
+  ]
+}
